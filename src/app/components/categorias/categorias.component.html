@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Pepito</h1>
+  <h2>New Category</h2>
+
+  <div class="input-group">
+    <input [(ngModel)]="nuevaCategoria" placeholder="Name" />
+    <button (click)="agregar()">＋</button>
+  </div>
+
+  <button class="save" (click)="guardar()">Save</button>
+
+  <ul class="lista-categorias">
+    <li *ngFor="let cat of categorias">
+      <span class="icon">{{ cat.icono }}</span>
+      <span class="nombre">{{ cat.nombre }}</span>
+    </li>
+  </ul>
+</div>

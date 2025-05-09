@@ -1,0 +1,12 @@
+<div class="note-container">
+  <h2>Edit Note</h2>
+
+  <label>Title</label>
+  <input type="text" [(ngModel)]="titulo" />
+
+  <label>Note</label>
+  <textarea [(ngModel)]="contenido" rows="6"></textarea>
+
+  <button (click)="guardarNota()">Save</button>
+</div>
+ 

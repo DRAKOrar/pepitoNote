@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Pepito</h1>
+  <h2>New Category</h2>
+
+  <div class="input-group">
+    <input [(ngModel)]="categoryName" type="text" placeholder="Name" />
+    <button (click)="saveCategory()">+</button>
+  </div>
+
+  <button class="save-button" (click)="saveCategory()">Save</button>
+
+  <div class="categories">
+    <div *ngFor="let category of categories" class="category-item">
+      {{ category }}
+    </div>
+  </div>
+</div>

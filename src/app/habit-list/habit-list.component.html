@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Your Habits</h1>
+
+  <div *ngIf="habits.length === 0">
+    <p>No habits created yet.</p>
+  </div>
+
+  <div *ngFor="let habit of habits" class="habit-card">
+    <div class="habit-info">
+      <h3>{{ habit.name }}</h3>
+      <p>Category: {{ habit.category }}</p>
+      <p>Frequency: {{ habit.frequency }}</p>
+    </div>
+
+    <div class="habit-check">
+      <label>
+        <input type="checkbox" [(ngModel)]="habit.completedToday" />
+        Completed
+      </label>
+    </div>
+  </div>
+</div>

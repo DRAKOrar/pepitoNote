@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Create New Habit</h1>
+
+  <input [(ngModel)]="habitName" type="text" placeholder="Habit Name" />
+
+  <select [(ngModel)]="selectedCategory">
+    <option value="">Select Category</option>
+    <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+  </select>
+
+  <select [(ngModel)]="frequency">
+    <option value="">Select Frequency</option>
+    <option value="Daily">Daily</option>
+    <option value="Weekly">Weekly</option>
+    <option value="Monthly">Monthly</option>
+  </select>
+
+  <button (click)="saveHabit()">Save Habit</button>
+</div>

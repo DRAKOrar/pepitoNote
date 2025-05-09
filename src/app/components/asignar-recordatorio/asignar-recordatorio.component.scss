@@ -1,0 +1,55 @@
+.container {
+  background-color: #fffce8;
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1d1f21;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background: #fff9dd;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.row > div {
+  flex: 1;
+}
+
+button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffd344;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}

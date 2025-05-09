@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Pepito</h1>
+  <h2>Set Reminder</h2>
+
+  <label>Title</label>
+  <input type="text" [(ngModel)]="titulo" />
+
+  <div class="row">
+    <div>
+      <label>Date</label>
+      <input type="date" [(ngModel)]="fecha" />
+    </div>
+    <div>
+      <label>Time</label>
+      <input type="time" [(ngModel)]="hora" />
+    </div>
+  </div>
+
+  <button (click)="guardar()">Save</button>
+</div>

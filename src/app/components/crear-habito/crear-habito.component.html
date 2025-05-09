@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="menu-icon">☰</div>
+  <h1>Pepito</h1>
+  <h2>Reminders</h2>
+
+  <div
+    class="reminder"
+    *ngFor="let r of recordatorios; let i = index"
+    [class.checked]="r.completado"
+    (click)="toggle(i)"
+  >
+    <label>
+      <input type="checkbox" [checked]="r.completado" />
+      {{ r.texto }}
+    </label>
+    <span class="fecha-hora">{{ r.fecha }}<br />{{ r.hora }}</span>
+  </div>
+
+  <div class="nueva">
+    <input [(ngModel)]="habito" placeholder="Nuevo hábito..." />
+    <button (click)="agregarRecordatorio()">+ New Reminder</button>
+  </div>
+</div>

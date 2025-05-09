@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="header">
+    <h1>Pepito</h1>
+    <button (click)="irANuevoComponente()" class="add-button">+</button>
+  </div>
+
+  <div *ngFor="let note of notes" class="note-card">
+    <h2>{{ note.title }}</h2>
+    <p>{{ note.note }}</p>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.container {
+  background-color: #fdf7e3;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.habit-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.habit-info h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.habit-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.habit-check {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}

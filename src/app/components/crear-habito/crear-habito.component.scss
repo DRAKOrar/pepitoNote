@@ -1,0 +1,67 @@
+.container {
+  background: #fffce8;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1d1f21;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.reminder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+.reminder.checked {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.fecha-hora {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.nueva {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.nueva input {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.nueva button {
+  padding: 1rem;
+  background: #ffd344;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}

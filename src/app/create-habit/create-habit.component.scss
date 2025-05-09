@@ -1,0 +1,32 @@
+.container {
+  background-color: #fdf7e3;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #f5e8c7;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #f4ce14;
+  color: black;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+}
